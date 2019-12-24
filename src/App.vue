@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <fodmap></fodmap>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Fodmap from "./components/fodmap";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Fodmap
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  margin: 0;
   color: #2c3e50;
-  margin-top: 60px;
+  line-height: 1.8;
+  font-size: 100%;
+  background: #f6f6f6;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 </style>
