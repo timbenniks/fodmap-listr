@@ -24,8 +24,17 @@
 </template>
 
 <script>
-import foods from "../foods.json";
 import Fuse from "fuse.js";
+
+let foods = null;
+
+if (window.navigator.language === "nl-NL") {
+  const foods_nl = require("../nl.json");
+  foods = foods_nl;
+} else {
+  const foods_en = require("../en.json");
+  foods = foods_en;
+}
 
 export default {
   name: "fodmap",
