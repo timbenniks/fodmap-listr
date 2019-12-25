@@ -4,7 +4,7 @@
       <input
         type="text"
         name="filter"
-        placeholder="Filter foods by name"
+        placeholder="Search"
         v-model="filter"
         v-on:focus="filterFocus"
       />
@@ -109,14 +109,14 @@ export default {
 
 li {
   padding: 0.5em;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 
   &[data-status="1"] {
-    background: #fff0f0;
+    background: #9a1616;
   }
 
   &[data-status="0"] {
-    background: #f0fff4;
+    background: #317e0f;
   }
 
   span {
@@ -124,7 +124,7 @@ li {
 
     &.note {
       font-size: 11px;
-      color: #777;
+      color: #fff;
     }
   }
 }
